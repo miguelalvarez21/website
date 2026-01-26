@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Natur All | Spa y Salón de Belleza en Tegucigalpa</title>
-    <meta name="description" content="Natur All ofrece los mejores servicios de spa, masajes, nails spa y salón de belleza en Tegucigalpa, Honduras. Relájate, rejuvenece y cuida tu bienestar con nosotros.">
-    <meta name="keywords" content="spa Tegucigalpa, salón de belleza Tegucigalpa, masajes Tegucigalpa, nails spa Tegucigalpa, tratamientos de belleza Honduras, bienestar Tegucigalpa">
+    <title>Natur All | Spa, Salon & Wellness in Honduras</title>
+    <meta name="description" content="Descubre los mejores servicios de spa, salón, nails spa y masajes en Honduras en Natur All. Relájate y rejuvenece con nuestros tratamientos de calidad.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Paleta inspirada en el logo: marrón/café y beige -->
     <!-- Google tag (gtag.js) -->
@@ -14,12 +13,206 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'AW-11521444471');
     </script>
     <style>
-        /* Tu CSS existente se mantiene sin cambios */
+        :root {
+            --main-brown: #8a6343;
+            --secondary-brown: #b48a68;
+            --light-beige: #f4e6d7;
+            --dark-brown: #6b472b;
+            --text-brown: #432d1a;
+        }
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            color: var(--text-brown);
+            background: var(--light-beige);
+        }
+        header {
+            background: var(--main-brown);
+            color: #fff;
+            padding: 32px 0 18px 0;
+            text-align: center;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 0 4px 24px #8a634340;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.6em;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        header h1 a {
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 2px 4px 16px #8a634366, 0px 1px 0px var(--main-brown);
+            transition: color 0.2s;
+        }
+        header h1 a:hover {
+            color: var(--secondary-brown);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 26px;
+        }
+        nav ul li { margin:0; }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.19em;
+            font-family: 'Georgia', serif;
+            transition: color .13s;
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background: var(--light-beige);
+            color: var(--main-brown);
+        }
+        .section-container {
+            max-width: 1100px;
+            margin: 38px auto;
+            background: #fff;
+            border-radius: 22px;
+            padding: 38px 22px 38px 22px;
+            box-shadow: 0 6px 28px #b48a6840;
+        }
+        .content-box h2 {
+            color: var(--main-brown);
+            border-bottom: 1.5px solid var(--secondary-brown);
+            padding-bottom: 5px;
+            font-size: 2em;
+            font-family: 'Georgia', serif;
+            margin-top: 0;
+        }
+        .content-box h3 {
+            color: var(--dark-brown);
+            margin-top: 34px;
+            font-size: 1.25em;
+            font-family: 'Georgia', serif;
+        }
+        .content-box ul {
+            margin: 0 0 18px 30px;
+            padding: 0;
+            font-size: 1.06em;
+        }
+        .bubble-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 38px;
+        }
+        .bubble {
+            background: var(--light-beige);
+            border: 1.5px solid var(--secondary-brown);
+            border-radius: 18px;
+            box-shadow: 0 2px 12px #b48a6840;
+            padding: 28px 26px 26px 26px;
+            flex: 1 1 240px;
+            min-width: 220px;
+            max-width: 330px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            font-size: 1.07em;
+            transition: transform .13s, box-shadow .13s, border-color .13s;
+        }
+        .bubble:hover {
+            transform: translateY(-7px) scale(1.035);
+            box-shadow: 0 10px 30px #b48a6860;
+            border-color: var(--main-brown);
+        }
+        .bubble h3 {
+            margin-bottom: 10px;
+            color: var(--main-brown);
+            font-size: 1.18em;
+            font-family: 'Georgia', serif;
+        }
+        .bubble p {
+            margin-bottom: 14px;
+            font-style: italic;
+            color: var(--text-brown);
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 6px;
+            padding: 12px 32px;
+            background-color: var(--main-brown);
+            color: #fff;
+            border-radius: 0;
+            text-decoration: none;
+            font-size: 1.05em;
+            font-family: 'Georgia', serif;
+            border: 1.3px solid var(--main-brown);
+            transition: background .16s, color .15s;
+        }
+        .cta-btn:hover {
+            background-color: #fff;
+            color: var(--main-brown);
+        }
+        /* Floating Text Us Button */
+        .textus-btn {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 1000;
+            background: var(--main-brown);
+            color: #fff;
+            border: 1.5px solid var(--main-brown);
+            border-radius: 6px;
+            box-shadow: 0 2px 18px #b48a6840;
+            padding: 13px 28px;
+            font-family: 'Georgia', serif;
+            font-size: 1.13em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.14s, color 0.14s, box-shadow 0.12s;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+        }
+        .textus-btn:hover {
+            background: #fff;
+            color: var(--main-brown);
+            border: 1.5px solid var(--main-brown);
+        }
+        footer {
+            text-align: center;
+            color: var(--main-brown);
+            padding: 18px 0 10px 0;
+            margin-top: 24px;
+            font-family: 'Georgia', serif;
+        }
+        @media (max-width: 1050px) {
+            .section-container {padding: 8px 2vw 18px 2vw;}
+            .bubble-section {gap: 18px;}
+            .textus-btn {padding: 11px 22px; font-size: 1em; bottom: 18px; right: 12px;}
+        }
+        @media (max-width: 700px) {
+            header h1 { font-size: 1.5em;}
+            .section-container {padding: 8px 2vw 16px 2vw;}
+            .bubble-section { flex-direction: column; gap: 18px;}
+            .bubble { padding: 12px 8px; min-width: 0; max-width: 100%;}
+            .textus-btn {padding: 8px 16px; font-size: .95em; bottom: 10px; right: 7px;}
+        }
+        @media (max-width: 430px) {
+            .bubble {padding: 9vw 2vw;}
+            .textus-btn {font-size: .91em;}
+        }
     </style>
     <script>
+    // Traducción automática y menú dinámico
     document.addEventListener("DOMContentLoaded", function() {
         var lang = navigator.language || navigator.userLanguage;
         var navOrder = [
@@ -41,25 +234,25 @@
             navUl.appendChild(li);
         });
 
-        // Traducción de contenido con keywords
+        // Traducción de texto principal y burbujas
         var bubbles = document.querySelectorAll(".bubble");
         if(lang && lang.startsWith('en')) {
             document.documentElement.lang = "en";
-            document.title = "Natur All | Spa & Beauty Salon in Tegucigalpa, Honduras";
+            document.title = "Natur All | Spa, Salon & Wellness in Honduras";
             document.querySelector("header h1 a").textContent = "Natur All";
-            document.querySelector(".content-box h2").textContent = "Welcome to Natur All Spa & Salon in Tegucigalpa";
-            document.querySelector(".content-box p").textContent = "Experience the best spa, massages, nails spa, and beauty salon services in Tegucigalpa, Honduras. Relax, rejuvenate, and take care of your wellbeing with Natur All.";
+            document.querySelector(".content-box h2").textContent = "Welcome to Natur All";
+            document.querySelector(".content-box p").textContent = "Discover our spa, salon, nails and massage services in Honduras. At Natur All, we offer a variety of treatments designed to relax and rejuvenate you.";
             document.querySelector(".content-box h3").textContent = "Why choose us?";
             var reasons = [
-                "High-quality services in a relaxing environment.",
-                "Professionally trained staff.",
+                "Quality services in a relaxing environment.",
+                "Highly trained staff.",
                 "Special offers and exclusive promotions."
             ];
             var lis = document.querySelectorAll(".content-box ul li");
             for(let i=0; i<lis.length; i++) lis[i].textContent = reasons[i];
-            // Categorías con keywords
-            bubbles[0].querySelector("h3").textContent = "Massages in Tegucigalpa";
-            bubbles[0].querySelector("p").textContent = "Relax and rejuvenate with our professional massages.";
+            // Categorías
+            bubbles[0].querySelector("h3").textContent = "Massages";
+            bubbles[0].querySelector("p").textContent = "Escape the stress. Experience pure relaxation.";
             bubbles[0].querySelector("a").textContent = "See Massages";
             bubbles[0].querySelector("a").setAttribute("href", "https://naturallhn.com/spa");
 
@@ -68,28 +261,28 @@
             bubbles[1].querySelector("a").textContent = "See Gentlemen's Spa";
             bubbles[1].querySelector("a").setAttribute("href", "https://naturallhn.com/spa-caballeros");
 
-            bubbles[2].querySelector("h3").textContent = "Nails Spa Tegucigalpa";
+            bubbles[2].querySelector("h3").textContent = "Nails Spa";
             bubbles[2].querySelector("p").textContent = "Beauty and care for your hands and feet.";
             bubbles[2].querySelector("a").textContent = "See Nails Spa";
             bubbles[2].querySelector("a").setAttribute("href", "https://naturallhn.com/nails-spa");
 
-            bubbles[3].querySelector("h3").textContent = "Beauty Salon in Tegucigalpa";
-            bubbles[3].querySelector("p").textContent = "Hair, color, and styling services to enhance your look.";
+            bubbles[3].querySelector("h3").textContent = "Salon";
+            bubbles[3].querySelector("p").textContent = "Care for your style. Hair, color and more.";
             bubbles[3].querySelector("a").textContent = "See Salon";
             bubbles[3].querySelector("a").setAttribute("href", "https://naturallhn.com/salon");
 
             bubbles[4].querySelector("h3").textContent = "Contact Us";
-            bubbles[4].querySelector("p").textContent = "Book your appointment today.";
+            bubbles[4].querySelector("p").textContent = "Get in touch for your appointment.";
             bubbles[4].querySelector("a").textContent = "Contact";
             bubbles[4].querySelector("a").setAttribute("href", "https://naturallhn.com/contacto");
 
             document.querySelector("footer p").textContent = "© 2025 Natur All. All rights reserved.";
         } else {
             document.documentElement.lang = "es";
-            document.title = "Natur All | Spa y Salón de Belleza en Tegucigalpa";
+            document.title = "Natur All | Spa, Salón y Bienestar en Honduras";
             document.querySelector("header h1 a").textContent = "Natur All";
-            document.querySelector(".content-box h2").textContent = "Bienvenido a Natur All Spa y Salón en Tegucigalpa";
-            document.querySelector(".content-box p").textContent = "Descubre nuestros servicios de spa, masajes, nails spa y salón de belleza en Tegucigalpa, Honduras. Relájate, rejuvenece y cuida tu bienestar con Natur All.";
+            document.querySelector(".content-box h2").textContent = "Bienvenido a Natur All";
+            document.querySelector(".content-box p").textContent = "Descubre nuestros servicios de spa, salón, nails spa y masajes en Honduras. En Natur All, te ofrecemos una variedad de tratamientos diseñados para relajarte y rejuvenecer.";
             document.querySelector(".content-box h3").textContent = "¿Por qué elegirnos?";
             var reasons = [
                 "Servicios de calidad en un ambiente relajante.",
@@ -98,9 +291,9 @@
             ];
             var lis = document.querySelectorAll(".content-box ul li");
             for(let i=0; i<lis.length; i++) lis[i].textContent = reasons[i];
-            // Categorías con keywords
-            bubbles[0].querySelector("h3").textContent = "Masajes en Tegucigalpa";
-            bubbles[0].querySelector("p").textContent = "Relájate y rejuvenece con nuestros masajes profesionales.";
+            // Categorías
+            bubbles[0].querySelector("h3").textContent = "Masajes";
+            bubbles[0].querySelector("p").textContent = "Relájate y rejuvenece.";
             bubbles[0].querySelector("a").textContent = "Ver Masajes";
             bubbles[0].querySelector("a").setAttribute("href", "https://naturallhn.com/spa");
 
@@ -109,12 +302,12 @@
             bubbles[1].querySelector("a").textContent = "Ver Spa para Caballeros";
             bubbles[1].querySelector("a").setAttribute("href", "https://naturallhn.com/spa-caballeros");
 
-            bubbles[2].querySelector("h3").textContent = "Nails Spa Tegucigalpa";
+            bubbles[2].querySelector("h3").textContent = "Nails Spa";
             bubbles[2].querySelector("p").textContent = "Belleza y cuidado para tus manos y pies.";
             bubbles[2].querySelector("a").textContent = "Ver Nails Spa";
             bubbles[2].querySelector("a").setAttribute("href", "https://naturallhn.com/nails-spa");
 
-            bubbles[3].querySelector("h3").textContent = "Salón de Belleza en Tegucigalpa";
+            bubbles[3].querySelector("h3").textContent = "Salón";
             bubbles[3].querySelector("p").textContent = "Cuida tu estilo. Cabello, color y más.";
             bubbles[3].querySelector("a").textContent = "Ver Salón";
             bubbles[3].querySelector("a").setAttribute("href", "https://naturallhn.com/salon");
@@ -126,7 +319,6 @@
 
             document.querySelector("footer p").textContent = "© 2025 Natur All. Todos los derechos reservados.";
         }
-
         // TEXT US/ESCRÍBENOS BUTTON
         var textBtn = document.createElement("a");
         textBtn.className = "textus-btn";
@@ -144,6 +336,56 @@
     </script>
 </head>
 <body>
-    <!-- resto de tu HTML permanece igual -->
+    <header>
+        <nav>
+            <h1><a href="https://naturallhn.com/">Natur All</a></h1>
+            <ul>
+                <!-- El menú es generado dinámicamente por JS -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section-container">
+        <div class="content-box">
+            <h2>Bienvenido a Natur All</h2>
+            <p>Descubre nuestros servicios de spa, salón, nails spa y masajes en Honduras. En Natur All, te ofrecemos una variedad de tratamientos diseñados para relajarte y rejuvenecer.</p>
+            <h3>¿Por qué elegirnos?</h3>
+            <ul>
+                <li>Servicios de calidad en un ambiente relajante.</li>
+                <li>Personal altamente capacitado.</li>
+                <li>Ofertas especiales y promociones exclusivas.</li>
+            </ul>
+            <div class="bubble-section">
+                <div class="bubble">
+                    <h3>Masajes</h3>
+                    <p>Relájate y rejuvenece.</p>
+                    <a href="https://naturallhn.com/spa" class="cta-btn">Ver Spa</a>
+                </div>
+                <div class="bubble">
+                    <h3>Spa para Caballeros</h3>
+                    <p>Relajación diseñada para el hombre moderno.</p>
+                    <a href="https://naturallhn.com/spa-caballeros" class="cta-btn">Ver Spa para Caballeros</a>
+                </div>
+                <div class="bubble">
+                    <h3>Nails Spa</h3>
+                    <p>Belleza y cuidado para tus manos y pies.</p>
+                    <a href="https://naturallhn.com/nails-spa" class="cta-btn">Ver Nails Spa</a>
+                </div>
+                <div class="bubble">
+                    <h3>Salón</h3>
+                    <p>Cuida tu estilo. Cabello, color y más.</p>
+                    <a href="https://naturallhn.com/salon" class="cta-btn">Ver Salón</a>
+                </div>
+                <div class="bubble">
+                    <h3>Contáctanos</h3>
+                    <p>Agenda tu cita con nosotros.</p>
+                    <a href="https://naturallhn.com/contacto" class="cta-btn">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Natur All. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
