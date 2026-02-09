@@ -234,14 +234,6 @@
             contact[2].innerHTML = "<strong>Instagram:</strong> <a href=\"https://www.instagram.com/naturallspahn/\" class=\"contact-links\" target=\"_blank\">@naturallhn</a>";
             contact[3].innerHTML = "<strong>Address:</strong> Avenida Choluteca, Colonia Tepeyac, Tegucigalpa, Francisco Morazán";
             contact[4].innerHTML = "<strong>Hours:</strong> Monday to Saturday, 8:00 AM – 6:00 PM";
-            // Aquí añadimos la nota para domingos
-            let appointmentNote = "Domingos con cita previa";
-            let sundayNote = document.createElement("p");
-            sundayNote.style.margin = "12px 0";
-            sundayNote.style.fontSize = "1.13em";
-            sundayNote.style.textAlign = "center";
-            sundayNote.innerText = appointmentNote;
-            contact[4].parentNode.insertBefore(sundayNote, contact[5]);
             contact[5].innerHTML = "<strong>Google Maps:</strong> <a href=\"https://maps.app.goo.gl/HUDmgae4HPJv7r268\" class=\"contact-links\" target=\"_blank\">View location</a>";
             document.querySelector('.map h2').textContent = "Our Location";
         } else {
@@ -260,8 +252,8 @@
             contact[2].innerHTML = "<strong>Instagram:</strong> <a href=\"https://www.instagram.com/naturallspahn/\" class=\"contact-links\" target=\"_blank\">@naturallhn</a>";
             contact[3].innerHTML = "<strong>Dirección:</strong> Avenida Choluteca, Colonia Tepeyac, Tegucigalpa, Francisco Morazán";
             contact[4].innerHTML =
-"<strong>Horario:</strong> Lunes a sábado, 8:00 AM – 6:00 PM<br>" +
-"<span>📅 <em>Domingos con cita previa</em></span>";
+                "<strong>Horario:</strong> Lunes a sábado, 8:00 AM – 6:00 PM<br>" +
+                "<span>📅 <em>Domingos con cita previa</em></span>";
 
             contact[5].innerHTML = "<strong>Google Maps:</strong> <a href=\"https://maps.app.goo.gl/HUDmgae4HPJv7r268\" class=\"contact-links\" target=\"_blank\">Ver ubicación</a>";
             document.querySelector('.map h2').textContent = "¿Dónde estamos?";
