@@ -259,15 +259,10 @@
             contact[1].innerHTML = "<strong>WhatsApp:</strong> <a href=\"https://wa.me/50487647340?text=Hola!%20Me%20gustaría%20agendar%20una%20cita%20o%20más%20información.%20Gracias!\" class=\"contact-links\" target=\"_blank\">Escríbenos por WhatsApp</a>";
             contact[2].innerHTML = "<strong>Instagram:</strong> <a href=\"https://www.instagram.com/naturallspahn/\" class=\"contact-links\" target=\"_blank\">@naturallhn</a>";
             contact[3].innerHTML = "<strong>Dirección:</strong> Edificio La Placita, Tegucigalpa, Honduras";
-            contact[4].innerHTML = "<strong>Horario:</strong> Lunes a sábado, 8:00 AM – 6:00 PM";
-            // Aquí añadimos la nota para domingos
-            let appointmentNote = "Domingo se atiende con cita";
-            let sundayNote = document.createElement("p");
-            sundayNote.style.margin = "12px 0";
-            sundayNote.style.fontSize = "1.13em";
-            sundayNote.style.textAlign = "center";
-            sundayNote.innerText = appointmentNote;
-            contact[4].parentNode.insertBefore(sundayNote, contact[5]);
+            contact[4].innerHTML =
+"<strong>Horario:</strong> Lunes a sábado, 8:00 AM – 6:00 PM<br>" +
+"<span>📅 <em>Domingos con cita previa</em></span>";
+
             contact[5].innerHTML = "<strong>Google Maps:</strong> <a href=\"https://maps.app.goo.gl/HUDmgae4HPJv7r268\" class=\"contact-links\" target=\"_blank\">Ver ubicación</a>";
             document.querySelector('.map h2').textContent = "¿Dónde estamos?";
         }
